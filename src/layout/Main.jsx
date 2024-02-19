@@ -11,14 +11,14 @@ function Main() {
     return (
         <>
             <Header></Header>
-            <Grid templateColumns={'repeat(5, 1fr)'} gap={4}>
-                <GridItem colSpan={1} bg='tomato'>
+            <Grid pos={'relative'} templateColumns={'repeat(5, 1fr)'} gap={4}>
+                <GridItem colSpan={1} >
                     <LeftNav/>
                 </GridItem>
-                <GridItem colSpan={3} bg='papayawhip'>
+                <GridItem colSpan={3}>
                     <Outlet/>
                 </GridItem>
-                <GridItem colSpan={1} bg='lightcyan'>
+                <GridItem colSpan={1} >
                     <RightNav/>
                 </GridItem>
             </Grid>
